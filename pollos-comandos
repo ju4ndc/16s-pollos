@@ -1,0 +1,36 @@
+qiime feature-table filter-samples \
+--i-table /home/usuario/Desktop/q2/analysis/big-tree/big-tree-03-table-dada2.qza \
+--m-metadata-file box1-samples-to-keep \
+--o-filtered-table box1-table-dada2.qza
+-----------------------------------------------------------
+qiime feature-table summarize \
+--i-table box1-table-dada2.qza \
+--o-visualization box1-table-dada2.qzv
+----------------------------------------------------------- 
+qiime diversity core-metrics-phylogenetic \
+--i-phylogeny /home/usuario/Desktop/q2/analysis/big-tree/big-tree-03-rooted-tree.qza \
+--i-table box1-table-dada2.qza \
+--p-sampling-depth 6758 \
+--m-metadata-file box1-metadata \
+--output-dir box1-core-metrics
+-----------------------------------------------------------
+qiime taxa barplot \
+--i-table box1-table-dada2.qza \
+--i-taxonomy /home/usuario/Desktop/q2/analysis/big-tree/big-tree-03-taxonomy.qza \
+--m-metadata-file box1-metadata \
+--o-visualization box1-taxa-bar-plots-dada2.qzv
+
+-----------------------------------------------------------
+qiime diversity alpha-rarefaction \
+--i-table box1-table-dada2.qza \
+--i-phylogeny /home/usuario/Desktop/q2/analysis/big-tree/big-tree-03-rooted-tree.qza \
+--p-max-depth 6758 \
+--p-steps 30 \
+--p-metrics observed_otus \
+--p-metrics chao1 \
+--p-metrics shannon \
+--p-metrics faith_pd \
+--p-metrics simpson_e \
+--p-metrics goods_coverage \
+--m-metadata-file box1-metadata \
+--o-visualization box1-alpha-rarefaction-curves.qzv

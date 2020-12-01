@@ -1,0 +1,13 @@
+sample-id	date	year	month	season	source	dna-c	dna-m	seq-run	env	origin	farm	producer	age	week	cycle	treatment	tt-type	description
+Z01C	20150727	2015	7	winter	cecum	745	qia1	m02	exp	arg	box1	inta	12	2		bacitracin	exp-atb	box1-1
+Z02C	20150803	2015	8	winter	cecum	496	qia1	m02	exp	arg	box1	inta	19	3		bacitracin	exp-atb	box1-2
+Z03C	20150810	2015	8	winter	cecum	392	qia1	m02	exp	arg	box1	inta	26	4		bacitracin	exp-atb	box1-3
+Z04C	20150814	2015	8	winter	cecum	263	qia1	m02	exp	arg	box1	inta	30	5		bacitracin	exp-atb	box1-4
+Z05C	20150727	2015	7	winter	cecum	444	qia1	m02	exp	arg	box1	inta	12	2		control	exp-none	box1-5
+Z06C	20150803	2015	8	winter	cecum	930	qia1	m02	exp	arg	box1	inta	19	3		control	exp-none	box1-6
+Z07C	20150810	2015	8	winter	cecum	326	qia1	m02	exp	arg	box1	inta	26	4		control	exp-none	box1-7
+Z08C	20150814	2015	8	winter	cecum	348	qia1	m02	exp	arg	box1	inta	30	5		control	exp-none	box1-8
+Z09C	20150727	2015	7	winter	cecum	836	qia1	m02	exp	arg	box1	inta	12	2		tan	exp-tan	box1-9
+Z10C	20150803	2015	8	winter	cecum	234	qia1	m02	exp	arg	box1	inta	19	3		tan	exp-tan	box1-10
+Z11C	20150810	2015	8	winter	cecum	496	qia1	m02	exp	arg	box1	inta	26	4		tan	exp-tan	box1-11
+Z12C	20150814	2015	8	winter	cecum	169	qia1	m02	exp	arg	box1	inta	30	5		tan	exp-tan	box1-12
