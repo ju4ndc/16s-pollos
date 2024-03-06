@@ -23,7 +23,7 @@ MINICONDA_PATH = (
     "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh"
 )
 QIIME_YAML_TEMPLATE = (
-    "https://data.qiime2.org/distro/amplicon/qiime2-{version}-py{python}-linux-conda.yml"
+    "https://github.com/ju4ndc/16s-pollos/blob/main/qiime2-amplicon-2024.2-py38-linux-conda.yml"
 )
 
 if len(sys.argv) == 2:
