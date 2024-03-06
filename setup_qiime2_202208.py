@@ -23,16 +23,16 @@ MINICONDA_PATH = (
     "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh"
 )
 QIIME_YAML_TEMPLATE = (
-    "https://data.qiime2.org/distro/core/qiime2-{version}-py{python}-linux-conda.yml"
+    "https://data.qiime2.org/distro/amplicon/qiime2-{version}-py{python}-linux-conda.yml"
 )
 
 if len(sys.argv) == 2:
     version = sys.argv[1]
 else:
-    version = "2022.8"
+    version = "2024.2"
 
 if float(version) < 2021.4:
-    pyver = "36"
+    pyver = "38"
 else:
     pyver = "38"
 
